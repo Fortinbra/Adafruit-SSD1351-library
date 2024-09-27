@@ -1,0 +1,2 @@
+add_library(Adafruit_SSD1351 Adafruit_SSD1351.cpp)
+target_include_directories(Adafruit_SSD1351 INTERFACE .)
