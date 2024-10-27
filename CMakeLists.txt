@@ -1,2 +1,8 @@
 add_library(Adafruit_SSD1351 Adafruit_SSD1351.cpp)
 target_include_directories(Adafruit_SSD1351 INTERFACE .)
+target_link_libraries(Adafruit_SSD1351 Adafruit_GFX
+Adafruit_BusIO
+pico_stdlib
+hardware_gpio
+hardware_spi
+hardware_i2c)
